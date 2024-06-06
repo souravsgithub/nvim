@@ -12,6 +12,7 @@ return {
       -- local opts = { prefix = "<leader>", mode = "n" }
       local mappings = {
           ["<leader>fb"] = { "<cmd>Telescope buffers<CR>", "List buffers"},
+          ["<leader>fa"] = { "<cmd>:lua require('telescope.builtin').find_files({ hidden = true })<CR>", "Find files(all)"},
           ["<leader>ff"] = { "<cmd>Telescope find_files<CR>", "Find files"},
           ["<leader>fg"] = { "<cmd>Telescope live_grep<CR>", "Live grep"},
           ["<leader>fr"] = {"<cmd>Telescope oldfiles<CR>", "Recent files"},
