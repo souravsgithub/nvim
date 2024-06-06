@@ -8,7 +8,9 @@ return {
     -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
   },
   config = function()
-    local keymap = vim.keymap.set
-    keymap("n", "<C-e>", ":Neotree filesystem toggle left<CR>", {})
+    local wk = require("which-key")
+    wk.register({
+      ["<leader>e"] = { "<cmd>Neotree toggle<CR>", "Explorer"}
+    })
   end
 }
