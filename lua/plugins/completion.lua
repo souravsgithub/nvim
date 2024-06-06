@@ -1,14 +1,17 @@
 return {
+  {
+    "hrsh7th/cmp-nvim-lsp" -- this is to get snippets from the lsp attached to the current buffer and it's config is in the lsp.lua file
+  },
 	{
-		"L3MON4D3/LuaSnip",
+		"L3MON4D3/LuaSnip", -- luasnip is the engine that is used to expand the snippets
 		version = "v2.*",
 		dependencies = {
-			"saadparwaiz1/cmp_luasnip",
-      "rafamadriz/friendly-snippets",
+			"saadparwaiz1/cmp_luasnip", -- this helps luasnip ( it's very confusing )
+      "rafamadriz/friendly-snippets", -- this plugin gives us vs code like snippets for all major languages using the help of luasnip of course.
 		},
 	},
 	{
-		"hrsh7th/nvim-cmp",
+		"hrsh7th/nvim-cmp", -- this is the engine that is used for autocompletion in neovim
 		config = function()
 			-- Setup nvim-cmp
 			local cmp = require("cmp")

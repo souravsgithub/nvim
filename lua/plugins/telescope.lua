@@ -9,7 +9,6 @@ return {
       -- vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "buffers" })
       -- vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "tags" })
       local wk = require("which-key")
-      -- local opts = { prefix = "<leader>", mode = "n" }
       local mappings = {
           ["<leader>fb"] = { "<cmd>Telescope buffers<CR>", "List buffers"},
           ["<leader>fa"] = { "<cmd>:lua require('telescope.builtin').find_files({ hidden = true })<CR>", "Find files(all)"},
