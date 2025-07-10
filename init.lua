@@ -1,0 +1,12 @@
+require("user")
+require("config.options")
+require("config.autocmds")
+spec ("user.colorscheme")
+spec ("user.treesitter")
+spec ("user.treesitter-textobjects")
+spec ("user.which-key")
+spec ("user.telescope")
+spec ("user.lspconfig")
+spec ("user.blink")
+require("user.lazy")
+
