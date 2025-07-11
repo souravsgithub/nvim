@@ -23,8 +23,9 @@ vim.opt.termguicolors = true -- sets some color config from the terminals (I gue
 vim.opt.showmode = true -- shows the mode you are in
 vim.opt.signcolumn = "yes"
 
+-- Set up diagnostics
 vim.diagnostic.config({
-    virtual_text = true
+    virtual_lines = true,
 })
 -- keymaps
 vim.g.mapleader = " "
