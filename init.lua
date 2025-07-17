@@ -12,5 +12,6 @@ spec ("user.lazydev")
 spec ("user.nvim-dap")
 spec ("user.nvim-dap-vt")
 spec ("user.nvim-dap-ui")
+spec ("user.oil")
 require("user.lazy")
 
