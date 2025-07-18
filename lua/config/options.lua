@@ -29,4 +29,4 @@ vim.diagnostic.config({
 })
 -- keymaps
 vim.g.mapleader = " "
-vim.env.BROWSER = "firefox"
+vim.env.BROWSER = "qutebrowser"

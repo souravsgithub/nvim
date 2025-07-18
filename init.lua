@@ -13,5 +13,7 @@ spec ("user.nvim-dap")
 spec ("user.nvim-dap-vt")
 spec ("user.nvim-dap-ui")
 spec ("user.oil")
+spec ("user.autopairs")
+spec ("user.neorg")
 require("user.lazy")
 

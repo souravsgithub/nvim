@@ -49,11 +49,11 @@ M.config = function()
     local wk = require("which-key")
     wk.add({
         mode = {"n"},
-        {"<leader>db", dap.toggle_breakpoint, { desc = "Toggle Breakpoint" }},
-        {"<leader>dc", dap.continue, { desc = "Continue" }},
-        {"<leader>di", dap.step_into, { desc = "Step Into" }},
-        {"<leader>do", dap.step_over, { desc = "Step Over" }},
-        {"<leader>dt", dap.terminate, { desc = "Terminate" }},
+        {"<leader>db", dap.toggle_breakpoint, desc = "Toggle Breakpoint" },
+        {"<leader>dc", dap.continue, desc = "Continue" },
+        {"<leader>di", dap.step_into, desc = "Step Into" },
+        {"<leader>do", dap.step_over, desc = "Step Over" },
+        {"<leader>dt", dap.terminate, desc = "Terminate" },
     })
 
 
