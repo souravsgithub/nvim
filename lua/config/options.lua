@@ -20,8 +20,9 @@ vim.opt.inccommand = "split" -- live preview the changes made in a split below
 vim.opt.ignorecase = true -- ignores the casing in search, etc..
 vim.opt.termguicolors = true -- sets some color config from the terminals (I guess)
 
-vim.opt.showmode = true -- shows the mode you are in
+vim.opt.showmode = false -- shows the mode you are in
 vim.opt.signcolumn = "yes"
+vim.o.undofile = true -- save undo history
 
 -- Set up diagnostics
 vim.diagnostic.config({
@@ -29,4 +30,4 @@ vim.diagnostic.config({
 })
 -- keymaps
 vim.g.mapleader = " "
-vim.env.BROWSER = "qutebrowser"
+vim.env.BROWSER = "brave" -- open links in default browser
