@@ -1,7 +1,7 @@
 require("user")
 require("config.options")
 require("config.autocmds")
-spec ("user.colorscheme")
+spec ("user.themes.rosepine")
 spec ("user.treesitter")
 spec ("user.treesitter-textobjects")
 spec ("user.which-key")
