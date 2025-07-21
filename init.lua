@@ -16,5 +16,6 @@ spec ("user.oil")
 spec ("user.autopairs")
 spec ("user.neorg")
 spec ("user.lualine")
+spec ("user.surround")
 require("user.lazy")
 
