@@ -1,3 +1,4 @@
+vim.opt.guicursor = "n:blinkon0" -- sets the cursor to block even in insert mode
 vim.opt.number = true -- sets numbered lines
 vim.opt.relativenumber = true -- sets relative numbered lines
 
@@ -20,7 +21,7 @@ vim.opt.inccommand = "split" -- live preview the changes made in a split below
 vim.opt.ignorecase = true -- ignores the casing in search, etc..
 vim.opt.termguicolors = true -- sets some color config from the terminals (I guess)
 
-vim.opt.showmode = false -- shows the mode you are in
+vim.opt.showmode = true -- shows the mode you are in
 vim.opt.signcolumn = "yes"
 vim.o.undofile = true -- save undo history
 
