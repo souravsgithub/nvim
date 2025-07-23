@@ -6,7 +6,7 @@ local M = {
 M.config = function()
     require("rose-pine").setup({
         styles = {
-            transparency = true
+            transparency = false
         }
     })
     vim.cmd.colorscheme("rose-pine")
