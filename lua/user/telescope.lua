@@ -10,6 +10,9 @@ M.config = function()
     wk.add({
         mode = {"n"},
         {"<leader>ff", builtin.find_files, desc = "Telescope find files" },
+        {"<leader>fa", function()
+            builtin.find_files({ hidden = true })
+        end, desc = "Telescope find all files" },
         {"<leader>fg", builtin.live_grep, desc = "Telescope live grep" },
         {"<leader>fb", builtin.buffers, desc = "Telescope buffers" },
         {"<leader>fh", builtin.help_tags, desc = "Telescope help tags" },
