@@ -14,13 +14,24 @@
 -- return M
 
 
-local M = {
-    "rebelot/kanagawa.nvim"
+-- local M = {
+--     "rebelot/kanagawa.nvim"
+-- }
+--
+-- M.config = function()
+--     require("kanagawa").setup({})
+--     vim.cmd.colorscheme("kanagawa")
+-- end
+
+local M = { "ellisonleao/gruvbox.nvim",
+    priority = 1000 ,
+    config = true,
+    opts = ...
 }
 
 M.config = function()
-    require("kanagawa").setup({})
-    vim.cmd.colorscheme("kanagawa")
+    require("gruvbox").setup({
+        vim.cmd.colorscheme("gruvbox")
+    })
 end
-
 return M
