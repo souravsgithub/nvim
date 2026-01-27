@@ -23,7 +23,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
 -- synchronizes systme's clipboard with neovim's plus clipboard
-vim.opt.clipboard = "unnamedplus"
+-- vim.opt.clipboard = "unnamedplus"
 
 -- number of lines to show before or after the cursor when scrolling ( 999 = mid )
 vim.opt.scrolloff = 999

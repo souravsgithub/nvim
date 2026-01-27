@@ -14,6 +14,7 @@ M.config = function()
             { "<leader>ps", function() fzf.grep() end, desc = "project grep" },
             { "<C-p>", function() fzf.git_files() end, desc = "project git files" },
             { "<leader>pf", function() fzf.files() end, desc = "project all files" },
+            { "<leader>b", function() fzf.buffers() end, desc = "open buffer list" },
         })
     })
 end
