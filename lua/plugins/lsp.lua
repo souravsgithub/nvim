@@ -12,10 +12,17 @@ M.config = function()
     vim.lsp.enable("vtsls")
     -- downloaded using pacman
     vim.lsp.config("lua_ls", {
-        cmd = { "lua-language-server" }
+        cmd = { "lua-language-server" },
+        settings = {
+            Lua = {
+                diagnostics = {
+                    globals = { "vim" }
+                }
+            }
+        }
     })
     vim.lsp.enable("lua_ls")
-    -- downloaded from yay
+    -- downloaded from the site and setup manually
     vim.lsp.enable("jdtls")
     -- downloaded from pacman
     vim.lsp.config("tailwindcss", {
